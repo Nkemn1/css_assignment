@@ -1,0 +1,90 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(216, 164, 164, 1);
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 638px;
+    padding: 20px;
+}
+
+.header {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: 6px solid rgba(68, 203, 234, 1);
+    border-radius: 20px;
+    background-color: rgba(217, 217, 217, 1);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 542px;
+    padding: 34px;
+    text-align: center;
+    color: #000001;
+    font: 20px "Jacques Francois", serif;
+}
+
+.assignment-list {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(217, 217, 217, 1);
+    width: 100%;
+    padding: 49px 64px 88px;
+    text-align: center;
+    color: #000080;
+    font: 40px "Jacques Francois", serif;
+}
+
+.assignment-item {
+    margin: 10px 0;
+    color: #000080;
+}
+
+.assignment-item a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.assignment-item a:hover,
+.assignment-item a:focus {
+    text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+    .content-wrapper {
+        padding: 15px;
+    }
+    .header {
+        padding: 25px;
+        font-size: 18px;
+    }
+    .assignment-list {
+        padding: 40px 30px 70px;
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 640px) {
+    .content-wrapper {
+        padding: 10px;
+    }
+    .header {
+        padding: 20px;
+        font-size: 16px;
+    }
+    .assignment-list {
+        padding: 30px 20px 60px;
+        font-size: 30px;
+    }
+}
